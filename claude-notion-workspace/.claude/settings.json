@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch",
+      "mcp__notion__notion-get-teams",
+      "mcp__notion__notion-get-users",
+      "mcp__notion__notion-get-comments",
+      "mcp__Notion__notion-search",
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-get-teams",
+      "mcp__Notion__notion-get-users",
+      "mcp__Notion__notion-get-comments"
+    ],
+    "ask": [
+      "mcp__notion__notion-create-pages",
+      "mcp__notion__notion-update-page",
+      "mcp__notion__notion-move-pages",
+      "mcp__notion__notion-duplicate-page",
+      "mcp__notion__notion-create-database",
+      "mcp__notion__notion-update-data-source",
+      "mcp__notion__notion-create-comment",
+      "mcp__Notion__notion-create-pages",
+      "mcp__Notion__notion-update-page",
+      "mcp__Notion__notion-move-pages",
+      "mcp__Notion__notion-duplicate-page",
+      "mcp__Notion__notion-create-database",
+      "mcp__Notion__notion-update-data-source",
+      "mcp__Notion__notion-create-comment"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s\\n' '=== Claude Code x Notion 外部脳ワークスペース ===' '起動時読込(7-14)を実行してください: /session-startup を呼ぶか、CLAUDE.md の「起動時読込」に従い最新セッションログ・学びナレッジ所在マップを読む。' '作業一段落で記録(整理)を実行: /session-record（Notion 書込は承認後）。'"
+          }
+        ]
+      }
+    ]
+  }
+}
